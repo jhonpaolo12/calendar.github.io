@@ -1,1 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>My Calendar 2026</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f4f4f9;
+margin: 20px;
+}
+h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+h2 {
+margin-top: 40px;
+text-align: center;
+}
+.calendar {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+gap: 5px;
+margin: 20px auto;
+max-width: 900px;
+background: white;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.calendar div {
+text-align: center;
+padding: 10px;
+border-radius: 5px;
+}
+.header {
+font-weight: bold;
+background: #007bff;
+color: white;
+}
+.week {
+font-weight: bold;
+background: #d9edf7;
+}
+.holiday {
+background: grey;
+cursor: pointer;
+transition: 0.3s;
+}
+.holiday:hover {
+background: #ff9999;
+}
 
+
+
+
+/* Modal styles */
+.modal {
+display: none;
+position: fixed;
+z-index: 1000;
+padding-top: 100px;
+left: 0; top: 0;
+width: 100%; height: 100%;
+background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+background: white;
+margin: auto;
+padding: 20px;
+border-radius: 10px;
+max-width: 500px;
+text-align: center;
+}
+.modal img {
+max-width: 100%;
+margin-top: 10px;
+border-radius: 8px;
+}
+.close {
+color: #aaa;
+float: right;
+font-size: 24px;
+font-weight: bold;
+cursor: pointer;
+}
+.close:hover {
+color: black;
+}
+</style>
+</head>
+<body>
+<h1>📅 Philippine Regular Holidays Calendar 2026</h1>
+
+
+
+
+<!-- JANUARY -->
+<h2>January 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">1</div> <div></div> <div></div> <div> </div> <div class="holiday" onclick="openModal('newyear')">1</div><div>2</div><div>3</div><div>4</div>
+<div class="week">2</div> <div>5</div> <div>6</div> <div>7</div><div>8</div> <div>9</div><div>10</div><div>11</div>
+<div class="week">3</div> <div>12</div> <div>13</div> <div>14</div> <div>15</div> <div>16</div><div>17</div><div>18</div>
+<div class="week">4</div> <div>19</div> <div>20</div> <div>21</div> <div>22</div> <div>23</div> <div>24</div> <div>25</div>
+<div class="week">5</div> <div>26</div> <div>27</div> <div>28</div> <div>29</div><div>30</div><div>31</div><div></div>
+</div>
+
+
+<!-- FEBRUARY -->
+<h2>February 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">6</div> <div> </div> <div></div> <div></div> <div></div> <div></div> <div></div> <div>1</div> 
+<div class="week">7</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> <div>8</div> 
+<div class="week">8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div> <div>13</div> <div>14</div> <div>15</div> 
+<div class="week">9</div> <div>16</div> <div  class="holiday" onclick="openModal('chinesenwyr')">17</div>  <div>18</div> <div>19</div> <div>20</div>  <div>21</div> <div>22</div> 
+<div class="week">10</div> <div>23</div> <div>24</div> <div class="holiday" onclick="openModal('edsapower')">25</div> <div>26</div><div>27</div><div>28</div><div></div>
+</div>
+
+
+<!-- MARCH -->    
+<h2>March 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">11</div> <div></div> <div></div><div></div><div></div> <div></div><div></div><div>1</div>
+<div class="week">12</div> <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+<div class="week">13</div> <div>9</div> <div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+<div class="week">14</div> <div>16</div> <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div>
+<div class="week">15</div> <div>23</div> <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div>
+<div class="week">16</div> <div>30</div> <div>31</div><div></div><div></div><div></div><div></div><div></div>
+</div>
+   
+
+<!-- APRIL -->
+<h2>April 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">17</div> <div></div> <div></div> <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> 
+<div class="week">18</div> <div>6</div> <div>7</div> <div>8</div> <div class="holiday" onclick="openModal('arawkagitingan')">9</div> <div>10</div> <div>11</div> <div>12</div> 
+<div class="week">19</div> <div>13</div> <div>14</div> <div>15</div> <div>16</div> <div class="holiday" onclick="openModal('maundy')">17</div> <div class="holiday" onclick="openModal('goodfriday')">18</div> <div class="holiday" onclick="openModal('blcksaturday')">19</div> 
+<div class="week">20</div> <div>20</div> <div>21</div>  <div>22</div> <div>23</div> <div>24</div>  <div>25</div> <div>26</div> 
+<div class="week">21</div> <div>27</div> <div>28</div> <div>29</div> <div>30</div><div></div><div></div><div></div>
+</div>
+
+
+<!-- MAY -->    
+<h2>May 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">22</div> <div></div> <div></div> <div></div> <div></div> <div class="holiday" onclick="openModal('labor')">1</div> <div>2</div> <div>3</div> 
+<div class="week">23</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> <div>8</div> <div>9</div> <div>10</div> 
+<div class="week">24</div> <div>11</div><div>12</div> <div>13</div> <div>14</div> <div>15</div> <div>16</div> <div>17</div> 
+<div class="week">25</div> <div>18</div> <div>19</div> <div>20</div> <div>21</div> <div>22</div> <div>23</div> <div>24</div> 
+<div class="week">26</div> <div>25</div> <div>26</div> <div>27</div> <div>28</div> <div>29</div> <div>30</div> <div>31</div> 
+</div>
+  
+  
+  
+<!-- JUNE -->
+<h2>June 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">27</div> <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> 
+<div class="week">29</div> <div>8</div> <div>9</div> <div>10</div> <div>11</div> <div class="holiday" onclick="openModal('independence')">12</div> <div>13</div> <div>14</div> 
+<div class="week">30</div> <div>15</div> <div>16</div> <div>17</div> <div>18</div><div>19</div> <div>20</div> <div>21</div> 
+<div class="week">31</div> <div>22</div> <div>23</div> <div>24</div> <div>25</div> <div>26</div> <div>27</div> <div>28</div>
+<div class="week">32</div>  <div>29</div> <div>30</div> <div></div> <div></div> <div></div> <div></div> <div></div> 
+</div>
+
+
+<!-- JULY -->    
+<h2>July 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">33</div>  <div></div> <div></div> <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div>
+<div class="week">34</div>  <div>6</div> <div>7</div> <div>8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div> 
+<div class="week">33</div>  <div>13</div> <div>14</div> <div>15</div> <div>16</div> <div>17</div> <div>18</div> <div>19</div> 
+<div class="week">34</div>  <div>20</div> <div>21</div> <div>22</div> <div>23</div> <div>24</div> <div>25</div> <div>26</div> 
+<div class="week">33</div>  <div>27</div>  <div>28</div> <div>29</div> <div>30</div> <div>31</div> <div></div> <div></div> 
+</div>
+  
+  
+<!-- AUGUST -->    
+<h2>August 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">33</div>  <div></div> <div></div> <div></div> <div></div> <div></div> <div>1</div> <div>2</div>
+<div class="week">34</div>  <div>3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> <div>8</div> <div>9</div> 
+<div class="week">33</div>  <div>10</div> <div>11</div> <div>12</div> <div>13</div> <div>14</div> <div>15</div> <div>16</div> 
+<div class="week">34</div>  <div>17</div> <div>18</div> <div>19</div> <div>20</div> <div>21</div> <div>21</div> <div>23</div> 
+<div class="week">33</div>  <div>24</div>  <div class="holiday" onclick="openModal('heroes')">25</div>  <div>26</div> <div>27</div> <div>28</div> <div>29</div> <div>30</div> 
+<div class="week">33</div>  <div>31</div>  <div></div>  <div></div> <div></div> <div></div> <div></div> <div></div> 
+</div>
+
+<!-- SEPTEMBER -->
+<h2>September 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">17</div> <div></div> <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> 
+<div class="week">18</div> <div>7</div> <div>8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div> <div>13</div>
+<div class="week">19</div> <div>14</div> <div>15</div> <div>16</div> <div>17</div> <div>18</div> <div>19</div> <div>20</div>
+<div class="week">20</div> <div>21</div>  <div>22</div> <div>23</div> <div>24</div>  <div>25</div> <div>26</div> <div>27</div>
+<div class="week">21</div> <div>28</div> <div>29</div> <div>30</div><div></div><div></div><div></div> <div></div>
+</div>
+
+
+<!-- OCTOBER -->
+<h2>October 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">1</div> <div></div> <div></div> <div> </div> <div>1</div><div>2</div><div>3</div><div>4</div>
+<div class="week">2</div> <div>5</div> <div>6</div> <div>7</div><div>8</div> <div>9</div><div>10</div><div>11</div>
+<div class="week">3</div> <div>12</div> <div>13</div> <div>14</div> <div>15</div> <div>16</div><div>17</div><div>18</div>
+<div class="week">4</div> <div>19</div> <div>20</div> <div>21</div> <div>22</div> <div>23</div> <div>24</div> <div>25</div>
+<div class="week">5</div> <div>26</div> <div>27</div> <div>28</div> <div>29</div><div>30</div><div class="holiday" onclick="openModal('allsaints')">31</div><div></div>
+</div>
+
+
+<!-- NOVEMBER -->
+<h2>November 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">6</div> <div> </div> <div></div> <div></div> <div></div> <div></div> <div></div> <div class="holiday" onclick="openModal('allsaint')">1</div> 
+<div class="week">7</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> <div>8</div> 
+<div class="week">8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div> <div>13</div> <div>14</div> <div>15</div> 
+<div class="week">9</div> <div>16</div> <div>17</div>  <div>18</div> <div>19</div> <div>20</div>  <div>21</div> <div>22</div> 
+<div class="week">10</div> <div>23</div> <div>24</div> <div>25</div> <div>26</div><div>27</div><div>28</div><div>29</div>
+<div class="week">10</div> <div class="holiday" onclick="openModal('bonifacio')">30</div> <div></div> <div></div> <div></div><div></div><div></div><div></div>
+</div>
+
+
+<!-- DECEMBER -->
+<h2>December 2026</h2>
+<div class="calendar">
+<div class="header">Week</div><div class="header">Mon</div><div class="header">Tue</div><div class="header">Wed</div><div class="header">Thu</div><div class="header">Fri</div><div class="header">Sat</div><div class="header">Sun</div>
+<div class="week">17</div> <div></div> <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> 
+<div class="week">18</div> <div>7</div> <div class="holiday" onclick="openModal('feast')">8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div> <div>13</div>
+<div class="week">19</div> <div>14</div> <div>15</div> <div>16</div> <div>17</div> <div>18</div> <div>19</div> <div>20</div>
+<div class="week">20</div> <div>21</div>  <div>22</div> <div>23</div> <div class="holiday" onclick="openModal('lastday')">24</div>  <div class="holiday" onclick="openModal('christmas')">25</div> <div>26</div> <div>27</div>
+<div class="week">21</div> <div>28</div> <div>29</div> <div class="holiday" onclick="openModal('rizal')">30</div> <div class="holiday" onclick="openModal('lstday')">31</div><div></div><div></div> <div></div>
+</div>
+
+
+
+<!-- Modal for Holidays -->
+<div id="holidayModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h2 id="holidayTitle"></h2>
+<p id="holidayDesc"></p>
+<img id="holidayImg" src="" alt="Holiday Image">
+</div>
+</div>
+
+
+
+
+<script>
+const holidays = {
+newyear: { title: "New Year’s Day", desc: "🗓 January 1, 2026<br>A global celebration marking the first day of the year.", img: "pic1.jpg" },
+chinesenwyr: { title: "Chinese New Year", desc: "🗓 January 29, 2026<br>The most important and longest festival in Chinese culture.", img: "pic2.jpg" },
+edsapower: { title: "EDSA People Power", desc: "🗓 February 25, 2026<br> The Anniversary of EDSA People Power Revolution.", img: "pic3.jpg" },
+arawkagitingan: { title: "Araw ng Kagitingan", desc: "🗓 April 9, 2026<br>Commemorates the heroism of Filipino and American soldiers during WWII.", img: "pic4.jpg" },
+maundy: { title: "Maundy Thursday", desc: "🗓 April 17, 2026<br>A Christian observance remembering the Last Supper of Jesus Christ.", img: "5.jpg" },
+goodfriday: { title: "Good Friday", desc: "🗓 April 18, 2026<br>A solemn Christian holiday commemorating the crucifixion of Jesus.", img: "6.jpg" },
+blcksaturday: { title: "Black Saturday", desc: "🗓 April 19, 2026<br>Black Saturday commemorates Jesus Christ's passing.", img: "7.jpg" },
+labor: { title: "Labor Day", desc: "🗓 May 1, 2026<br>A day to honor workers and their contributions.", img: "8.jpg" },
+independence: { title: "Independence Day", desc: "🗓 June 12, 2026<br>Celebrates Philippine independence from Spain in 1898.", img: "9.jpg" },
+heroes: { title: "National Heroes Day", desc: "🗓 August 25, 2026<br>Honors all Filipino heroes who fought for the country’s freedom.", img: "10.jpg" },
+allsaints: { title: "All Saints' Day Eve", desc: "🗓 October 31, 2026<br>Those who have been recognized by the Church as saints, as well as those who have not been canonized.", img: "11.jpg" },
+allsaint: { title: "All Saints' Day Eve", desc: "🗓 November 1, 2026<br>Those who have been recognized by the Church as saints, as well as those who have not been canonized.", img: "12.jpg" },
+bonifacio: { title: "Bonifacio Day", desc: "🗓 November 30, 2026<br>Commemorates the birth of Andres Bonifacio, a national hero.", img: "13.jpg" },
+lstday: { title: "Last Day of the Year", desc: "🗓 December 31, 2026<br> New Year's Eve refers to the evening, or commonly the entire day, of the last day of the year", img: "18.jpg" },
+lastday: { title: "Christmas Day", desc: "🗓 December 24, 2026<br>Christmas Eve, the Christmas night mass, also called Midnight Mass", img: "15.jpg" },
+christmas: { title: "Christmas Day", desc: "🗓 December 25, 2026<br>Celebrates the birth of Jesus Christ, widely observed worldwide.", img: "16.jpg" },
+feast: { title: "The Solemnity of the Immaculate Conception", desc: "🗓  December 8, 2026<br> The Solemnity of the Immaculate Conception is a Catholic feast celebrating Mary's conception without sin.", img: "14.jpg" },
+rizal: { title: "Rizal Day", desc: "🗓 December 30, 2026<br>Commemorates the martyrdom of Dr. Jose Rizal in 1896.", img: "17.jpg" }
+};
+
+
+function openModal(holiday) {
+document.getElementById("holidayTitle").innerHTML = holidays[holiday].title;
+document.getElementById("holidayDesc").innerHTML = holidays[holiday].desc;
+document.getElementById("holidayImg").src = holidays[holiday].img;
+document.getElementById("holidayModal").style.display = "block";
+}
+function closeModal() {
+document.getElementById("holidayModal").style.display = "none";
+}
+window.onclick = function(event) {
+let modal = document.getElementById("holidayModal");
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+</body>
